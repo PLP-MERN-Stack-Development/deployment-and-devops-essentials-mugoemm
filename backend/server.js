@@ -3,9 +3,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 const morgan = require('morgan');
-const app = express();
 const cors = require('cors');
 
+const app = express();
 
 // Middleware
 app.use(helmet()); // Security headers
@@ -29,7 +29,7 @@ app.get('/health', (req, res) => {
 // Users CRUD API
 app.use('/api/users', require('./routes/users'));
 
-// Example route (replace with real routes)
+// Example root route
 app.get('/', (req, res) => {
   res.send('API is running');
 });
@@ -40,10 +40,8 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message || 'Something went wrong!' });
 });
 
+// Start server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
