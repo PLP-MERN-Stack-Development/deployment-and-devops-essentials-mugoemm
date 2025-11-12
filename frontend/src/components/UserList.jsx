@@ -20,13 +20,13 @@ function UserList({ users, isLoading, onDelete }) {
   return (
     <ul className="list">
       {users.map((user) => (
-        <li key={user.id} className="card list__item">
+        <li key={user._id} className="card list__item">
           <div className="list__content">
             <h3>{user.username}</h3>
             <p>{user.email}</p>
             <small>Created {new Date(user.createdAt).toLocaleString()}</small>
           </div>
-          <button type="button" className="button button--danger" onClick={() => onDelete(user.id)}>
+          <button type="button" className="button button--danger" onClick={() => onDelete(user._id)}>
             Delete
           </button>
         </li>

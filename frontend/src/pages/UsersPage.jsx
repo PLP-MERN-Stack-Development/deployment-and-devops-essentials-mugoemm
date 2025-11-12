@@ -42,7 +42,7 @@ function UsersPage() {
     try {
       setError(null);
       await api.deleteUser(id);
-      setUsers((prev) => prev.filter((user) => user.id !== id));
+      setUsers((prev) => prev.filter((user) => user._id !== id));
     } catch (err) {
       setError(err.message || 'Unable to delete user');
     }
