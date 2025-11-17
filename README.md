@@ -5,8 +5,8 @@
 ## 🚀 Live Deployment URLs
 
 ### Production Endpoints
-- **Frontend Application:** `https://your-app.vercel.app` _(Deploy to get URL)_
-- **Backend API:** `https://your-app.onrender.com` _(Deploy to get URL)_
+- **Frontend Application:** https://vercel.com/bernard-mugos-projects/deployment-and-devops-essentials-mugoemm/4SJRa51DjVy6kwi6ZiG6pdRVPNQS 
+- **Backend API:** https://deployment-and-devops-essentials-mugoemm.onrender.com/    those are my deployment li
 - **API Health Check:** `https://your-app.onrender.com/health`
 - **API Users Endpoint:** `https://your-app.onrender.com/api/users`
 
